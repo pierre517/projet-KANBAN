@@ -1,0 +1,47 @@
+header {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+main {
+  background-color: aquamarine;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nouvelleListe {
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h3 {
+  text-align: center;
+}
+
+.bouttonSupprimerListe {
+  margin-top: 0.5rem;
+}
+
+.tache {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  padding: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.bouttonSupprimerTache {
+  padding: 0.2rem;
+  height: 50%;
+}
