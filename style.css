@@ -1,5 +1,13 @@
+html,
+body {
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
 header {
-  background-color: aqua;
+  background-color: oklch(86.9% 0.022 252.894);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -7,41 +15,105 @@ header {
 }
 
 main {
-  background-color: aquamarine;
+  background-color: oklch(92.8% 0.006 264.531);
   height: 80vh;
   display: flex;
   justify-content: space-around;
+  gap: 10px;
   align-items: center;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 2rem;
 }
 
 .nouvelleListe {
   height: auto;
   width: auto;
   padding: 1rem;
-  background-color: brown;
+  background-color: oklch(88.2% 0.059 254.128);
+  border-radius: 20px;
+  border: 1px solid oklch(28.2% 0.091 267.935);
+  box-shadow: 5px 5px oklch(27.9% 0.041 260.031);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
+h1,
 h3 {
+  text-transform: uppercase;
+  color: oklch(12.9% 0.042 264.695);
   text-align: center;
+}
+
+.ajouterListe {
+  height: 40px;
+  font-family: "Playwrite DE Grund", cursive;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: oklch(88.2% 0.059 254.128);
+  border: 1px solid;
+}
+
+.ajouterListe:hover {
+  animation: pulse-beat-alt1 0.6s ease-in-out;
+}
+@keyframes pulse-beat-alt1 {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) scale(1.05) rotate(5deg);
+  }
+  50% {
+    transform: translateY(4px) scale(0.95) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-3px) scale(1.02) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+button {
+  font-family: "Playwrite DE Grund", cursive;
+  cursor: pointer;
 }
 
 .bouttonSupprimerListe {
   margin-top: 0.5rem;
+  border-radius: 10px;
+  padding: 0.2rem;
+  border: 1px solid;
+}
+
+.bouttonSupprimerListe:hover {
+  background-color: rgb(219, 219, 219);
+  color: rgb(247, 70, 70);
+  transition: 0.3s;
 }
 
 .tache {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: aqua;
-  padding: 0.1rem;
+  background-color: oklch(95.1% 0.026 236.824);
   margin-bottom: 0.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid oklch(28.2% 0.091 267.935);
 }
 
 .bouttonSupprimerTache {
   padding: 0.2rem;
   height: 50%;
+  border: 0;
+  background-color: oklch(95.1% 0.026 236.824);
+  font-weight: bold;
+}
+
+.bouttonSupprimerTache:hover {
+  color: rgb(230, 15, 15);
+  transition: 0.3s;
 }
