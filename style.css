@@ -156,3 +156,10 @@ button {
 .titreTache {
   height: 24px;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: oklch(86.9% 0.022 252.894);
+}
