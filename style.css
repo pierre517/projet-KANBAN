@@ -10,6 +10,8 @@ header {
   background-color: oklch(86.9% 0.022 252.894);
   display: flex;
   justify-content: space-around;
+  gap: 1rem;
+
   align-items: center;
   padding: 1rem;
 }
@@ -20,19 +22,37 @@ main {
   display: flex;
   gap: 3rem;
   align-items: center;
-  overflow-y: auto;
-  overflow-x: auto;
+  padding: 2rem;
 }
 
 .mainAccueuil {
+  height: auto;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.mainIndex {
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 p {
   font-size: 1.2rem;
   text-align: center;
   padding: 1rem;
+  width: 70%;
+}
+
+picture {
+  border: 1px solid oklch(28.2% 0.091 267.935);
+  box-shadow: 5px 5px oklch(27.9% 0.041 260.031);
+  border-radius: 20px;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .nouvelleListe {
@@ -56,16 +76,16 @@ h3 {
 }
 
 .ajouterListe {
-  height: 40px;
   font-family: "Playwrite DE Grund", cursive;
   border-radius: 10px;
   cursor: pointer;
   background-color: oklch(88.2% 0.059 254.128);
   border: 1px solid;
+  padding: 0.5rem;
 }
 
 .ajouterListe:hover,
-.lienAccueuil:hover {
+a:hover {
   animation: pulse-beat-alt1 0.6s ease-in-out;
 }
 @keyframes pulse-beat-alt1 {
@@ -86,7 +106,7 @@ h3 {
   }
 }
 
-.lienAccueuil {
+a {
   font-weight: bold;
   color: oklch(12.9% 0.042 264.695);
 }
