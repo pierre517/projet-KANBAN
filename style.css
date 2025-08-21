@@ -69,7 +69,7 @@ img {
 }
 
 h1,
-h3 {
+.nouvelleListe {
   text-transform: uppercase;
   color: oklch(12.9% 0.042 264.695);
   text-align: center;
@@ -151,4 +151,8 @@ button {
 .bouttonSupprimerTache:hover {
   color: rgb(230, 15, 15);
   transition: 0.3s;
+}
+
+.titreTache {
+  height: 24px;
 }

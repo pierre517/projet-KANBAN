@@ -22,11 +22,13 @@ bouttonListe.addEventListener("click", function () {
 function afficherListe(titre, index) {
   const main = document.querySelector("main");
   //   je créé une div et je lui donne une class nouvelleListe, puis je la place dans le main
-  const nouvelleListe = document.createElement("div");
+  const nouvelleListe = document.createElement("section");
   nouvelleListe.classList.add("nouvelleListe");
+  nouvelleListe.setAttribute("aria-label", "liste contenant les taches");
   main.appendChild(nouvelleListe);
   //   je créé un titre dans cette Nouvelle liste qui sera la valeur de l'input du prompt et je le place dans la div
-  let nomDeLaListe = document.createElement("h3");
+  let nomDeLaListe = document.createElement("h2");
+  nouvelleListe.classList.add("nouvelleListe");
   nouvelleListe.appendChild(nomDeLaListe);
   nomDeLaListe.textContent = titre;
 
@@ -39,6 +41,10 @@ function afficherListe(titre, index) {
   // je créé un input afin de donner du contenu aux nouvelles taches, je lui donne une classe css et je l'insere dans ma liste
   let titreTache = document.createElement("input");
   titreTache.classList.add("titreTache");
+  titreTache.setAttribute(
+    "aria-label",
+    "espace pour entrer le titre de votre nouvelle tache"
+  );
   nouvelleListe.appendChild(titreTache);
   titreTache.placeholder = `votre nouvelle tache ici`;
   //   dans ma liste je créé un bouton pour ajouter des taches, je le place dans ma liste et je lui donne une classe css
@@ -93,13 +99,14 @@ function afficherListe(titre, index) {
 function afficherTache(nomDeTache, parent, index) {
   const tache = document.createElement("div");
   tache.classList.add("tache");
-  let texteTache = document.createElement("p");
+  let texteTache = document.createElement("h3");
   texteTache.classList.add("texteTache");
   texteTache.textContent = nomDeTache;
   tache.appendChild(texteTache);
   const bouttonSupprimerTache = document.createElement("button");
   bouttonSupprimerTache.textContent = `X`;
   bouttonSupprimerTache.classList.add("bouttonSupprimerTache");
+  bouttonSupprimerTache.setAttribute("aria-label", "supprimer la tache");
   tache.appendChild(bouttonSupprimerTache);
   parent.after(tache);
 
