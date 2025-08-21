@@ -86,6 +86,8 @@ h1,
 
 .ajouterListe:hover,
 a:hover {
+  color: oklch(50.794% 0.15145 268.168);
+  transition: 0.5s;
   animation: pulse-beat-alt1 0.6s ease-in-out;
 }
 @keyframes pulse-beat-alt1 {
