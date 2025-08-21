@@ -65,7 +65,7 @@ function afficherListe(titre, index) {
     // je créé une div avec élément p pour afficher la tache demandée,un boutton pour la supprimer, je lui donne une classe et je la place apres le titre de la liste
     const tache = document.createElement("div");
     tache.classList.add("tache");
-    let texteTache = document.createElement("p");
+    let texteTache = document.createElement("h3");
     texteTache.classList.add("texteTache");
     texteTache.textContent = titreTache.value;
     tache.appendChild(texteTache);
