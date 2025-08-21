@@ -28,7 +28,7 @@ function afficherListe(titre, index) {
   main.appendChild(nouvelleListe);
   //   je créé un titre dans cette Nouvelle liste qui sera la valeur de l'input du prompt et je le place dans la div
   let nomDeLaListe = document.createElement("h2");
-  nouvelleListe.classList.add("nouvelleListe");
+  nomDeLaListe.classList.add("nomDeLaListe");
   nouvelleListe.appendChild(nomDeLaListe);
   nomDeLaListe.textContent = titre;
 

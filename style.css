@@ -69,7 +69,7 @@ img {
 }
 
 h1,
-.nouvelleListe {
+.nomDeLaListe {
   text-transform: uppercase;
   color: oklch(12.9% 0.042 264.695);
   text-align: center;
