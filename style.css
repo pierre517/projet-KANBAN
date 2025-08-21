@@ -23,7 +23,6 @@ main {
   align-items: center;
   overflow-y: auto;
   overflow-x: auto;
-  padding: 2rem;
 }
 
 .nouvelleListe {
@@ -74,6 +73,11 @@ h3 {
   100% {
     transform: translateY(0) scale(1) rotate(0deg);
   }
+}
+
+.lienAccueuil {
+  font-weight: bold;
+  color: oklch(12.9% 0.042 264.695);
 }
 
 button {

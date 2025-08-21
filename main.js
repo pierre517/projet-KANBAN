@@ -30,7 +30,7 @@ function afficherListe(titre, index) {
   nouvelleListe.appendChild(nomDeLaListe);
   nomDeLaListe.textContent = titre;
 
-  // je créé une boucle afin de parcourir les taches, de trouver les taches exisatntes et de les afficher
+  // je créé une boucle afin de parcourir les taches, de trouver les taches exisantes et de les afficher
 
   for (let i = 0; i < tableauDeDonnees[index].tache.length; i++) {
     afficherTache(tableauDeDonnees[index].tache[i], nomDeLaListe, index);
