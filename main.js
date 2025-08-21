@@ -45,6 +45,7 @@ function afficherListe(titre, index) {
     "aria-label",
     "espace pour entrer le titre de votre nouvelle tache"
   );
+  titreTache.setAttribute("name", "titreTache");
   nouvelleListe.appendChild(titreTache);
   titreTache.placeholder = `votre nouvelle tache ici`;
   //   dans ma liste je créé un bouton pour ajouter des taches, je le place dans ma liste et je lui donne une classe css
